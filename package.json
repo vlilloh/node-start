@@ -1,0 +1,34 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "comments": {
+    "devDependencies": {
+      "npm": "Instalamos las dependencias usando de momento npm@6 con `npm i`, y seguidamente hacemos el bootstrap usando npm@7.0.0-beta.7 (posteriores no hacen el bootstrap) con `npx npm@7.0.0-beta.7 i`. Más adelante lo haremos todo a la vez usando sólo npm7 con `npm i`, cuando npm7 pueda instalar paquetes de Github y cuando venga por defecto en Node.js."
+    }
+  },
+  "description": "Node Start",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  },
+  "keywords": [
+    "Node",
+    "Start",
+    "Starter"
+  ],
+  "license": "ISC",
+  "name": "@vlilloh/node-start",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlilloh/node-start"
+  },
+  "scripts": {
+    "compile": "tsc -b packages/*",
+    "clean": "tsc -b packages/* --clean",
+    "serve": "node packages/app/index.js",
+    "login": "npm login -reg https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

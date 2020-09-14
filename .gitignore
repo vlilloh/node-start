@@ -1,0 +1,7 @@
+.vscode/
+build/
+node_modules/
+packages/**/.tsbuildinfo
+packages/**/*.d.ts
+packages/**/*.js
+packages/**/*.js.map
